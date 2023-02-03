@@ -7,7 +7,7 @@ import email from './media/images/Mail/mail.svg'
 import spotify from './media/images/Spotify/Spotify.svg'
 
 const Socials = () => {
-    return (<div className='flex justify-end content-center space-x-2 mr-4'>
+    return (<div className='flex justify-end content-center space-x-4 mr-4'>
         <a href='mailto:zacharybabers@gmail.com' target="_blank">
             <img src={email} className="mail-logo" alt='email' />
         </a>
