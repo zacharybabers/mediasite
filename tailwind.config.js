@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        ibm: "'IBM Plex Mono', monospace",
+      }
+    },
   },
   plugins: [require('tailwindcss-font-inter')],
 }

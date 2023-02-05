@@ -1,5 +1,5 @@
 import React from 'react';
-import './Socials.css'
+import './utilitycss/Socials.css'
 import github from './media/images/Github/Github.svg'
 import instagram from './media/images/Instagram/Instagram.svg'
 import linkedin from './media/images/LinkedIn/LinkedIn.svg'
@@ -7,7 +7,7 @@ import email from './media/images/Mail/mail.svg'
 import spotify from './media/images/Spotify/Spotify.svg'
 
 const Socials = () => {
-    return (<div className='flex justify-end content-center space-x-4 mr-4'>
+    return (<div className='flex justify-center md:justify-end content-center space-x-4 md:mr-4'>
         <a href='mailto:zacharybabers@gmail.com' target="_blank">
             <img src={email} className="mail-logo" alt='email' />
         </a>
