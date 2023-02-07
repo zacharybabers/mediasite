@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
+import Mediagrid from './Mediagrid';
 
 function App() {
   return (
-    <Header/>
+    <div>
+      <Header/>
+      <Mediagrid/>
+    </div>
   );
 }
 
