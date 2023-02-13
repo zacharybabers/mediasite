@@ -27,7 +27,7 @@ class Mediagrid extends React.Component {
         let randomizedContent = this.getRandomizedContent(content);
     
         return(
-            <div className='mt-4'>
+            <div className='m-4'>
                 <ContentWrapper contentList={randomizedContent} />
             </div>
         );
