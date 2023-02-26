@@ -5,7 +5,6 @@ import Mediagrid from "./Mediagrid.js";
 const Mediapage = () => {
     return (
         <div>
-            <Header/>
             <Mediagrid/>
         </div>
     )
