@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Mediapage from './Mediapage';
+import Photopage from './Photopage';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
           <Routes>
             <Route path='/' element={
               <Mediapage/>
+            } />
+            <Route path='/photo' element={
+              <Photopage/>
             } />
           </Routes>
         </div>
