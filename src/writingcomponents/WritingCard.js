@@ -16,4 +16,3 @@ const WritingCard = () => {
 
 export default WritingCard;
 
-//todo round a little more, add tags at the bottom based on tailwind docs card, with healthy margin between description and card. besides that not really sure.
