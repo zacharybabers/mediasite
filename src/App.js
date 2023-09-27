@@ -9,6 +9,7 @@ import Writingpage from './Writingpage';
 import Gamespage from './Gamespage';
 import Aboutpage from './Aboutpage';
 import React, { useState } from "react";
+import Codepage from './Codepage';
 
 class App extends React.Component {
   constructor(){
@@ -24,6 +25,9 @@ class App extends React.Component {
             <Routes>
               <Route path='/' element={
                 <Mediapage/>
+              } />
+              <Route path='/code' element={
+                <Codepage/>
               } />
               <Route path='/photo' element={
                 <Photopage/>

@@ -4,8 +4,8 @@ import {slide as Menu} from 'react-burger-menu';
 
 const MobileNav = () => {
     return(
-        <div className='md:hidden'>
-            <Menu itemListClassName = {"font-ibm font-light"}>
+        <div className='md:hidden mt-0'>
+            <Menu itemListClassName = {"font-ibm font-light z-50"}>
                 <a id="media" className="menu-item" href="/">media</a>
                 <a id="games" className="menu-item" href="/games">games</a>
                 <a id="writing" className="menu-item" href="/writing">writing</a>
