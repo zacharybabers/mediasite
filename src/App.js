@@ -35,7 +35,7 @@ class App extends React.Component {
               <Route path='/games' element={
                 <Gamespage/>
               } />
-              <Route path='/threed' element={
+              <Route path='/3D' element={
                 <ThreeDpage/>
               } />
               <Route path='/writing' element={

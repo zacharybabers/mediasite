@@ -25,7 +25,7 @@ const Header = (props) => {
     return(
         <div className={`sticky shadow-lg top-0 left-0 right-0 transition-transform duration-300 transform ${
             scrolling ? 'translate-y-0' : '-translate-y-full'
-          } bg-white mb-4 pt-4 pb-4`}>
+          } bg-white mb-4 pt-2 pb-2`}>
             <MobileNav/>
             <Socials />
             <Nameplate/>
