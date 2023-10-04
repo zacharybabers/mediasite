@@ -11,10 +11,10 @@ const CodeCard = () => {
                         Voxel Engine developed in Unity 3D.
                     </div>
                     <div>
-                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mt-8 mr-2 mb-2">C#</span>
-                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Unity</span>
-                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Fastnoise</span>
-                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Git</span>
+                        <span className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full px-3 py-1 text-sm font-semibold text-white mt-8 mr-2 mb-2">C#</span>
+                        <span className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Unity</span>
+                        <span className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Fastnoise</span>
+                        <span className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">Git</span>
                         <div className='font-bold underline'>
                             <a href='https://github.com/zacharybabers/voxel-experimentation' target="_blank">
                                 Github Repo <img src={github} className="social-logo inline-block" alt='github' />
