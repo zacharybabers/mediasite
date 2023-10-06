@@ -5,7 +5,7 @@ const WritingCard = () => {
         <div className='overflow-hidden bg-white shadow-md outline outline-1 shadow-stone-500 outline-stone-400 p-2 lg:shrink-0 md:w-3/12 font-inter hover:transform hover:scale-110 transition-transform duration-300'>
             <p className='m-2'>10.13.22</p>
             <div className='flex justify-between'>
-                <h1 className='font-bold text-xl m-2 font-ibm underline font-semibold'> Tears In Rain </h1>
+                <h1 className='text-xl m-2 font-ibm underline font-semibold'> Tears In Rain </h1>
             </div>
             <p className='m-2 mt-8'> The story of how a man overcame his nature and became something more than he could ever imagine. Watch as ties are cut, demons are slain, and life is created. Idk </p>
             <div className='flex flex-row justify-between'>
