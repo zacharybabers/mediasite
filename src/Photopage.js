@@ -22,9 +22,16 @@ class Photopage extends React.Component {
         let imageList = this.formatImageList(this.getImages());
 
         return(
-            <div className='justify-center flex m-4'>
-                <div className='flex flex-col justify-center w-96 gap-6'>
-                {imageList}
+            <div className='m-10 mx-18 flex items-center flex-col space-y-5'>
+                <div className='md:w-9/12'>
+                    <div className='font-inter font-bold text-6xl'>
+                        [Photographs]
+                    </div>
+                </div>
+                <div className='justify-center flex m-4'>
+                    <div className='flex flex-col justify-center w-96 gap-6'>
+                        {imageList}
+                    </div>
                 </div>
             </div>
             
