@@ -1,7 +1,13 @@
 import React from 'react';
 import CodeCard from './codecomponents/CodeCard';
+import { CodeProjects } from './codecomponents/CodeProjects';
 
 const Codepage = () => {
+
+    const codeCards = CodeProjects.map((project, i) => {
+        return <CodeCard key={i} project={project} />
+    });
+
     return (
         <div className='m-10 mx-18 flex items-center flex-col space-y-5'>
             <div className='md:w-9/12'>
@@ -9,8 +15,7 @@ const Codepage = () => {
                     [Coding Projects]
                 </div>
             </div>
-            <CodeCard />
-            <CodeCard />
+            {codeCards}
         </div>
        
     );
