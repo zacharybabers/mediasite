@@ -1,3 +1,5 @@
+import GenericWritingPage from "./GenericWritingPage"
+
 export const WritingProjects = [
     {
         id: 1,
@@ -8,6 +10,8 @@ export const WritingProjects = [
         writingType: 'short story',
         genre: 'sci-fi',
         date: '10.13.22',
+        route: '/tearsinrain',
+        writingPage: <GenericWritingPage/>
     },
     {
         id: 2,
@@ -18,6 +22,8 @@ export const WritingProjects = [
         writingType: 'poem',
         genre: 'dark fantasy',
         date: '9.22.21',
+        route: '/theinvitation',
+        writingPage: <GenericWritingPage/>
     },
     {
         id: 3,

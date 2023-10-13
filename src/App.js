@@ -10,13 +10,27 @@ import Gamespage from './Gamespage';
 import Aboutpage from './Aboutpage';
 import React, { useState } from "react";
 import Codepage from './Codepage';
+import { WritingProjects } from './writingcomponents/WritingProjects';
 
 class App extends React.Component {
   constructor(){
     super();
   }
+
+  getWritingRoutes(){
+    let routesArray = [];
+
+    WritingProjects.forEach((project) => {
+      let route = <Route path={project.route} element={project.writingPage} />
+      routesArray.push(route);
+    });
+
+    return routesArray;
+  }
   
   render(){
+
+    const myRoutes = this.getWritingRoutes();
     return (
       <Router>
         <div className = "app">
@@ -44,6 +58,7 @@ class App extends React.Component {
               <Route path='/about' element={
                 <Aboutpage/>
               } />
+              {myRoutes}
             </Routes>
           </div>
         </div>

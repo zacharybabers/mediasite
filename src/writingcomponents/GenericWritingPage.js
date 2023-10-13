@@ -1,6 +1,6 @@
 import React from "react";
 
-const TearsInRain = () => {
+const GenericWritingPage = () => {
     return(
         <div>
             <h1>Tears in Rain; a short story by me</h1>
@@ -13,4 +13,4 @@ const TearsInRain = () => {
     );
 }
 
-export default TearsInRain;
+export default GenericWritingPage;

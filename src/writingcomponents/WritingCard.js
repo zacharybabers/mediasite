@@ -14,7 +14,7 @@ const WritingCard = ({writing}) => {
                     <span className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{writing.genre}</span>
                 </div>
                 <div className='font-bold underline text-right mt-8 mb-2 mr-2'>
-                        <a href='https://github.com/zacharybabers/voxel-experimentation' target="_blank">
+                        <a href={writing.route} target="_blank">
                             Read more...
                         </a>
                 </div>
