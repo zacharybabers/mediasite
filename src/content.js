@@ -149,4 +149,12 @@ export const content = [
         layout: 'square',
         source: 'contentsource/photos/squarepic.png'
     },
+    {
+        id: 19,
+        caption: 'Thingamajigger',
+        type: 'photo',
+        date: new Date(2023, 10, 20),
+        layout: 'smallsquare',
+        source: 'contentsource/photos/render.png'
+    },
 ]

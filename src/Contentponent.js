@@ -2,25 +2,42 @@ import React from 'react';
 
 
 const Contentponent = ({content}) => {
+
+
+    const imageStyle = {
+        backgroundImage: `url(${content.source})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: '100%',
+        height: '100%',
+      };
+
     if(content.layout === 'square'){
         return(
-            <div  className="col-span-2 row-span-2 bg-black flex" >
-                <img src={content.source} alt={content.caption} className="grow" />
-            </div>
+            <a href='https://www.google.com' target="_blank" rel="noopener noreferrer" className="col-span-2 row-span-2 aspect-[1/1] bg-black flex" >
+                <div style={imageStyle} />
+            </a>
         )
     }
     else if(content.layout === 'horizontal'){
         return(
-            <div className="col-span-2 row-span-1 bg-black flex" >
-                <img src={content.source} alt={content.caption} className="grow" />
-            </div>
+            <a href='https://www.google.com' target="_blank" rel="noopener noreferrer" className="col-span-2 row-span-1 aspect-[2/1] bg-black flex" >
+                <div style={imageStyle} />
+            </a>
         )
     }
     else if(content.layout === 'vertical'){
         return(
-            <div className="col-span-1 row-span-2 bg-black flex just">
-                <img src={content.source} alt={content.caption} className="grow" />
-            </div>
+            <a href='https://www.google.com' target="_blank" rel="noopener noreferrer" className="col-span-1 row-span-2 aspect-[1/2] bg-black flex">
+                <div style={imageStyle} />
+            </a>
+        )
+    }
+    else if(content.layout === 'smallsquare'){
+        return(
+            <a href='https://www.google.com' target="_blank" rel="noopener noreferrer" className="col-span-1 row-span-1 aspect-[1/1] bg-black flex">
+                <div style={imageStyle} />
+            </a>
         )
     }
     else{
