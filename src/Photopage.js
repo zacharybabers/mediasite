@@ -1,14 +1,10 @@
 import React from 'react';
-import {content as content} from './content.js';
+import { PhotoProjects } from './PhotoProjects';
 
 class Photopage extends React.Component {
 
     constructor(){
         super();
-    }
-
-    getImages = () => {
-        return(content.filter(contentItem => contentItem.type === 'photo'));
     }
 
     formatImageList = (imageList) => {
@@ -19,7 +15,7 @@ class Photopage extends React.Component {
         );
     }
     render(){
-        let imageList = this.formatImageList(this.getImages());
+        let imageList = this.formatImageList(PhotoProjects);
 
         return(
             <div className='m-10 mx-18 flex items-center flex-col space-y-5'>

@@ -8,6 +8,10 @@ class Mediagrid extends React.Component {
         super();
     }
 
+    aggregrateContent(){
+
+    }
+
     shuffle = (array) => {
         let currentIndex = array.length, randomIndex;
 
