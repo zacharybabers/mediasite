@@ -14,28 +14,28 @@ const Contentponent = ({content}) => {
 
     if(content.layout === 'square'){
         return(
-            <a href='https://www.google.com' target="_blank" rel="noopener noreferrer" className="col-span-2 row-span-2 aspect-[1/1] bg-black flex" >
+            <a href={content.pageLink} rel="noopener noreferrer" className="col-span-2 row-span-2 aspect-[1/1] bg-black flex" >
                 <div style={imageStyle} />
             </a>
         )
     }
     else if(content.layout === 'horizontal'){
         return(
-            <a href='https://www.google.com' target="_blank" rel="noopener noreferrer" className="col-span-2 row-span-1 aspect-[2/1] bg-black flex" >
+            <a href={content.pageLink} rel="noopener noreferrer" className="col-span-2 row-span-1 aspect-[2/1] bg-black flex" >
                 <div style={imageStyle} />
             </a>
         )
     }
     else if(content.layout === 'vertical'){
         return(
-            <a href='https://www.google.com' target="_blank" rel="noopener noreferrer" className="col-span-1 row-span-2 aspect-[1/2] bg-black flex">
+            <a href={content.pageLink} rel="noopener noreferrer" className="col-span-1 row-span-2 aspect-[1/2] bg-black flex">
                 <div style={imageStyle} />
             </a>
         )
     }
     else if(content.layout === 'smallsquare'){
         return(
-            <a href='https://www.google.com' target="_blank" rel="noopener noreferrer" className="col-span-1 row-span-1 aspect-[1/1] bg-black flex">
+            <a href={content.pageLink} rel="noopener noreferrer" className="col-span-1 row-span-1 aspect-[1/1] bg-black flex">
                 <div style={imageStyle} />
             </a>
         )
