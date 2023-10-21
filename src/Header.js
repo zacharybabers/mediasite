@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Nameplate from './Nameplate';
 import Socials from './Socials';
 import Headtabs from './Headtabs';
-import MobileNav from './MobileNav';
 
 const Header = (props) => {
     const [scrolling, setScrolling] = useState(true);
@@ -26,7 +25,6 @@ const Header = (props) => {
         <div className={`sticky shadow-lg top-0 left-0 right-0 transition-transform duration-300 transform ${
             scrolling ? 'translate-y-0' : '-translate-y-full'
           } bg-white mb-4 pt-2 pb-2`}>
-            <MobileNav/>
             <Socials />
             <Nameplate/>
             <Headtabs/>

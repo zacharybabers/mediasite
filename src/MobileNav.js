@@ -1,21 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './utilitycss/MobileNav.css';
-import {slide as Menu} from 'react-burger-menu';
 
 const MobileNav = () => {
-    return(
-        <div className='md:hidden mt-0'>
-            <Menu itemListClassName = {"font-ibm font-light z-50"}>
-                <a id="media" className="menu-item" href="/">media</a>
-                <a id="games" className="menu-item" href="/games">games</a>
-                <a id="writing" className="menu-item" href="/writing">writing</a>
-                <a id="3D" className="menu-item" href="/threed">3D</a>
-                <a id="photo" className="menu-item" href="/photo">photo</a>
-                <a id="about" className="menu-item" href="/about">about</a>
-            </Menu>
-        </div>
-       
-    );
-}
+  const [isHidden, setIsHidden] = useState(false);
+
+  const handleClick = () => {
+    setIsHidden(true);
+  };
+
+  const containerStyle = {
+    opacity: isHidden ? 0 : 1,
+    transition: 'opacity 0.5s ease-in-out',
+  };
+
+  return (
+    <div style={containerStyle}>
+      <div className='md:hidden fixed top-0 left-0 w-full h-full z-50 bg-white/90 items-center flex justify-center'>
+        {isHidden ? null : (
+          <div>
+            <button onClick={handleClick} className='text-center'>
+              X marks the spot!
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 export default MobileNav;
