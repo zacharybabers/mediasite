@@ -20,6 +20,9 @@ const Aboutpage = () => {
                         <div className='mt-6'>
                             Contact: zacharybabers@gmail.com
                         </div>
+                        <a href='contentsource/resume/Zach_Babers_Resume.pdf' target='_blank'  className='mt-6 text-blue-600 underline'>
+                            View my Resume Here
+                        </a>
                     </div>
                 </div>
                 <img src='contentsource/photos/faceshot.png' alt='me' className="object-cover h-30 md:h-full md:w-3/12 shrink shadow-md shadow-stone-800 outline-2 mt-6 md:mt-6 mr-40 rounded-md" />
