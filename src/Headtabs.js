@@ -3,7 +3,7 @@ import React from 'react';
 const Headtabs = () => {
     return(
         <div className='mt-2'>
-            <ul className='hidden md:flex flex-row font-ibm justify-center align-bottom md:space-x-10 lg:space-x-20 text-xl font-light mb-2'>
+            <ul className='flex flex-col md:flex-row font-ibm justify-center items-center md:align-bottom md:space-x-10 lg:space-x-20 text-xl font-light mb-2'>
                 <li><a href='/' className='hover:text-red-600'>media</a></li>
                 <li><a href='/code' className='hover:text-red-600'>code</a></li>
                 <li><a href='/writing' className='hover:text-red-600'>writing</a></li>

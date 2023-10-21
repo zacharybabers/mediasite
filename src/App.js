@@ -63,7 +63,7 @@ class App extends React.Component {
               {myRoutes}
             </Routes>
           </div>
-          <MobileNav/>
+         
         </div>
       </Router>
       
