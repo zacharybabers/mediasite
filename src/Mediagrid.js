@@ -119,6 +119,18 @@ class Mediagrid extends React.Component {
     render(){
         //get randomized content
         let randomizedContent = this.getRandomizedContent(this.aggregrateContent());
+        if(randomizedContent[0].type === 'writing' || randomizedContent[0].layout === 'smallsquare'){
+            let i = 1
+            while(i < randomizedContent.length){
+                if (randomizedContent[i].type !== 'writing' && randomizedContent[0].layout === 'smallsquare'){
+                    let temp = randomizedContent[0]
+                    randomizedContent[0] = randomizedContent[i]
+                    randomizedContent[i] = temp
+                    i = randomizedContent.length
+                }
+                i = i + 1;
+            }
+        }
     
         return(
             <div className='m-4'>

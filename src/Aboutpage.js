@@ -15,7 +15,7 @@ const Aboutpage = () => {
                     </div>
                     <div className='md:w-4/12 mt-6'>
                         <div>
-                            Studying software development and computer science at Washington University in St. Louis, I have an interest in webdev, gamedev, procedural generation, and learning more about different ways to apply programming in general. I also love writing, fashion, running, and animation.
+                            Studying software development and computer science at Washington University in St. Louis, I have an interest in webdev, gamedev, procedural generation, and learning more about different ways to apply programming in general. I also love writing, fashion, sports, and animation.
                         </div>
                         <div className='mt-6'>
                             Contact: zacharybabers@gmail.com

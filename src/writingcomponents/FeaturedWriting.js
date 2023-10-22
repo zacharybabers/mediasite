@@ -16,7 +16,7 @@ const FeaturedWriting = ({writing}) => {
                     <span className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{writing.genre}</span>
                 </div>
                 <div className='font-bold underline text-right mt-8 mb-2 mr-2'>
-                        <a href={writing.route} target="_blank">
+                        <a href={writing.route} target="_blank" className='hover:text-red-600'>
                             Read more...
                         </a>
                 </div>

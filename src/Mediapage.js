@@ -5,7 +5,14 @@ import Mediagrid from "./Mediagrid.js";
 const Mediapage = () => {
     return (
         <div>
-            <Mediagrid/>
+            <div className='m-10 mx-18 flex justify-center items-center flex-col space-y-5'>
+                    <div className="font-inter font-semibold">
+                        welcome 👋🏾 click items below to start exploring things I've worked on, or go to one of the pages above to see a specific type of content.
+                    </div>
+            </div>
+            <div>
+                <Mediagrid/>
+            </div>
         </div>
     )
 }
