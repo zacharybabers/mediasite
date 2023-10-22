@@ -25,7 +25,7 @@ const Aboutpage = () => {
                         </a>
                     </div>
                 </div>
-                <img src='contentsource/photos/faceshot.png' alt='me' className="object-cover h-30 md:h-full md:w-3/12 shrink shadow-md shadow-stone-800 outline-2 mt-6 md:mt-6 mr-40 rounded-md" />
+                <img src='contentsource/photos/faceshot.png' alt='me' className="object-cover h-30 md:h-full md:w-3/12 shrink shadow-md shadow-stone-800 outline-2 mt-6 md:mt-6 mr-40 rounded-md hover:transform hover:scale-110 transition-transform duration-300" />
             </div>
         </div>
     );
