@@ -112,7 +112,9 @@ class Mediagrid extends React.Component {
         return array;
     }
 
-    getRandomizedContent = (contentList) => (this.shuffle(contentList));
+    getRandomizedContent = (contentList) => {
+        return (this.shuffle(contentList));
+    }
 
     render(){
         //get randomized content

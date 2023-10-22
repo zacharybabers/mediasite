@@ -10,7 +10,7 @@ class Photopage extends React.Component {
     formatImageList = (imageList) => {
         return(
             imageList.map((imageObj, i) => {
-                return(<img src={imageObj.source} alt={imageObj.caption} key={i} className='shrink'/>);
+                return(<img src={imageObj.source} alt={imageObj.caption} key={i} className='shrink hover:transform hover:scale-110 transition-transform duration-300'/>);
             })
         );
     }
