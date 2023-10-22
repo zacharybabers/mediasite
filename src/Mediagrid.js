@@ -71,11 +71,32 @@ class Mediagrid extends React.Component {
         )
     }
 
+    writingToContent(writingArray){
+        return(
+            writingArray.map((writingObject, i) => {
+                let writingContent = {
+                    id: i+1,
+                    type: writingObject.contentType,
+                    title: writingObject.title,
+                    synopsis: writingObject.synopsis,
+                    teaser: writingObject.teaser,
+                    date: writingObject.date,
+                    route: writingObject.route,
+                    writingType: writingObject.writingType,
+                    genre: writingObject.genre,
+                }
+
+                return writingContent
+            })
+        )
+    }
+
     aggregrateContent(){
         let contentArray = []
         contentArray = contentArray.concat(this.threedToContent(ThreedProjects))
         contentArray = contentArray.concat(this.codeToContent(CodeProjects))
         contentArray = contentArray.concat(this.photoToContent(PhotoProjects))
+        contentArray = contentArray.concat(this.writingToContent(WritingProjects))
         return contentArray;
     }
 
