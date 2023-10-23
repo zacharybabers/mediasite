@@ -6,6 +6,10 @@ export const ThreedProjects = [
         description: 'Simple low-poly render of a simple oceanside town in the mist.',
         pic1Path: 'contentsource/ThreedProjects/LightHouseTown/lighthouserender.png',
         pic2Path: 'contentsource/ThreedProjects/LightHouseTown/lighthousevertcycles.png',
+        media1: true,
+        media2: false,
+        layout1: 'horizontal',
+        layout2: 'vertical',
     },
     {
         id: 2,
@@ -14,6 +18,10 @@ export const ThreedProjects = [
         description: 'A simple sword that I modeled and rendered, made for a game I was working on. The game is no longer with us ;-;',
         pic1Path: 'contentsource/ThreedProjects/SwordStone/swordstone.png',
         pic2Path: 'contentsource/ThreedProjects/SwordStone/swordcycles.png',
+        media1: true,
+        media2: false,
+        layout1: 'horizontal',
+        layout2: 'vertical',
     },
     {
         id: 3,
@@ -22,6 +30,10 @@ export const ThreedProjects = [
         description: 'The second render I ever created, a couple swords on a rack.',
         pic1Path: 'contentsource/ThreedProjects/SwordRack/secondrender.png',
         pic2Path: 'contentsource/ThreedProjects/SwordRack/rackvertrender.png',
+        media1: true,
+        media2: false,
+        layout1: 'horizontal',
+        layout2: 'vertical',
     },
     {
         id: 4,
@@ -30,5 +42,9 @@ export const ThreedProjects = [
         description: 'The first render I created with blender :). A little green fan on a table.',
         pic1Path: 'contentsource/ThreedProjects/FirstRender/firstrender.png',
         pic2Path: 'contentsource/ThreedProjects/FirstRender/foldingfanvert.png',
+        media1: true,
+        media2: false,
+        layout1: 'horizontal',
+        layout2: 'vertical',
     },
 ]

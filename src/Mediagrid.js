@@ -12,46 +12,83 @@ class Mediagrid extends React.Component {
         super();
     }
 
-    threedToContent(threedArray){
-        return(
-            threedArray.map((threedObject, i) => {
-                let threedContent = {
-                        id: i+1,
-                        caption: threedObject.title,
-                        type: threedObject.contentType,
-                        layout: 'horizontal',
-                        source: threedObject.pic1Path,
-                        pageLink: '/3D'
-                    }
-                if(Math.random() > 0.5){
-                    threedContent.layout = 'vertical';
-                    threedContent.source = threedObject.pic2Path;
-                }
+    // threedToContent(threedArray){
+    //     return(
+    //         threedArray.map((threedObject, i) => {
+    //             let threedContent = {
+    //                     id: i+1,
+    //                     caption: threedObject.title,
+    //                     type: threedObject.contentType,
+    //                     layout: 'horizontal',
+    //                     source: threedObject.pic1Path,
+    //                     pageLink: '/3D'
+    //                 }
+    //             if(Math.random() > 0.5){
+    //                 threedContent.layout = 'vertical';
+    //                 threedContent.source = threedObject.pic2Path;
+    //             }
 
-                return threedContent;
-            })
-        )
+    //             return threedContent;
+    //         })
+    //     )
+    // }
+
+    threedToContent(threedArray){
+        let contentArray = []
+        threedArray.forEach((project, i) => {
+            if(project.media1){
+                let threedContent = {
+                    id: i+1,
+                    caption: project.title,
+                    type: project.contentType,
+                    layout: project.layout1,
+                    source: project.pic1Path,
+                    pageLink: '/3D'
+                }
+                contentArray.push(threedContent)
+            }
+            if(project.media2){
+                let threedContent = {
+                    id: i+1,
+                    caption: project.title,
+                    type: project.contentType,
+                    layout: project.layout2,
+                    source: project.pic2Path,
+                    pageLink: '/3D'
+                }
+                contentArray.push(threedContent)
+            }
+        });
+        return contentArray
     }
 
     codeToContent(codeArray){
-        return(
-            codeArray.map((codeObject, i) => {
-                let codeContent = {
-                        id: i+1,
-                        caption: codeObject.title,
-                        type: codeObject.contentType,
-                        layout: 'horizontal',
-                        source: codeObject.pic1Path,
-                        pageLink: '/code'
-                    }
-                if(Math.random() > 0.5){
-                    codeContent.layout = 'vertical';
-                    codeContent.source = codeObject.pic2Path;
+        let contentArray = []
+        codeArray.forEach((project, i) => {
+            if(project.media1){
+                let threedContent = {
+                    id: i+1,
+                    caption: project.title,
+                    type: project.contentType,
+                    layout: project.layout1,
+                    source: project.pic1Path,
+                    pageLink: '/code'
                 }
-
-                return codeContent;
-            })
-        )
+                contentArray.push(threedContent)
+            }
+            if(project.media2){
+                let threedContent = {
+                    id: i+1,
+                    caption: project.title,
+                    type: project.contentType,
+                    layout: project.layout2,
+                    source: project.pic2Path,
+                    pageLink: '/code'
+                }
+                contentArray.push(threedContent)
+            }
+        });
+        return contentArray
     }
 
     photoToContent(photoArray){
