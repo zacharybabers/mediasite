@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import Codepage from './Codepage';
 import { WritingProjects } from './writingcomponents/WritingProjects';
 import MobileNav from './MobileNav';
+import Footer from './Footer';
 
 class App extends React.Component {
   constructor(){
@@ -35,7 +36,6 @@ class App extends React.Component {
     return (
       <Router>
         <div className = "app">
-
           <Header/>
           <div className='content'>
             <Routes>
@@ -63,7 +63,7 @@ class App extends React.Component {
               {myRoutes}
             </Routes>
           </div>
-         
+          <Footer/>
         </div>
       </Router>
       

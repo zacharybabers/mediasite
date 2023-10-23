@@ -7,7 +7,7 @@ const Mediapage = () => {
         <div>
             <div className='m-10 mx-18 flex justify-center items-center flex-col space-y-5'>
                     <div className="font-inter font-semibold">
-                        welcome 👋🏾 click items below to start exploring my stuff, or go to one of the pages above to see a specific type of content.
+                        welcome 👋🏾 go to one of the pages above to see a specific type of content or click items below to start exploring my stuff.
                     </div>
             </div>
             <div>
