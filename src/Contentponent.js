@@ -17,7 +17,7 @@ const Contentponent = ({content}) => {
                 <p className="hidden md:block text-xl font-semibold font-ibm underline">{content.title}</p>
                 <p className='mt-4 text-sm md:text-base'>"{content.synopsis}"</p>
                 <div className='flex mt-4 space-x-2'>
-                    <span className='hidden md:inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-center rounded-full px-3 py-1 text-sm font-semibold text-white'>{content.writingType}</span>
+                    <span className='hidden md:inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-center rounded-full px-3 py-1 text-sm font-semibold text-white'>{content.genre}</span>
                     <a href={content.route} rel="noopener noreferrer" className='hidden md:inline-block underline font-semibold hover:text-red-600'>Click to Read</a>
                 </div>
                 

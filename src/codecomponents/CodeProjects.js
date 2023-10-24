@@ -9,7 +9,7 @@ export const CodeProjects = [
         media1: true,
         media2: false,
         layout1: 'horizontal',
-        layout2: 'vertical',
+        layout2: 'horizontal',
         tags: ['C#', 'Unity', 'Fastnoise', 'Git'],
         githubLink: 'https://github.com/zacharybabers/voxel-experimentation',
     },

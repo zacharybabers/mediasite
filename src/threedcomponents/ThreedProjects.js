@@ -20,7 +20,7 @@ export const ThreedProjects = [
         pic2Path: 'contentsource/ThreedProjects/SwordStone/swordcycles.png',
         media1: true,
         media2: false,
-        layout1: 'horizontal',
+        layout1: 'vertical',
         layout2: 'vertical',
     },
     {
