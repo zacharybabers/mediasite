@@ -24,7 +24,11 @@ const Contentponent = ({content}) => {
     if(content.layout === 'square'){
         return(
             <a href={content.pageLink} rel="noopener noreferrer" className="col-span-2 row-span-2 aspect-[1/1] bg-transparent flex" >
-                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle} />
+                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle}>
+                    <div className='bg-transparent hover:bg-black text-transparent hover:text-white h-full w-full'>
+                        hello, it's me
+                    </div>
+                </div>
             </a>
         )
     }
