@@ -25,8 +25,9 @@ const Contentponent = ({content}) => {
         return(
             <a href={content.pageLink} rel="noopener noreferrer" className="col-span-2 row-span-2 aspect-[1/1] bg-transparent flex" >
                 <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle}>
-                    <div className='bg-transparent hover:bg-black text-transparent hover:text-white h-full w-full'>
-                        hello, it's me
+                    <div className='bg-transparent hover:bg-black flex flex-col justify-center items-center hover:bg-opacity-60 text-transparent hover:text-white h-full w-full'>
+                        <p className='font-ibm font-semibold text-xl'>{content.caption}</p>
+                        <p className='font-inter text-xs'> click for more </p>
                     </div>
                 </div>
             </a>
@@ -35,21 +36,36 @@ const Contentponent = ({content}) => {
     else if(content.layout === 'horizontal'){
         return(
             <a href={content.pageLink} rel="noopener noreferrer" className="col-span-2 row-span-1 aspect-[2/1] bg-transparent flex" >
-                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle} />
+                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle}>
+                    <div className='bg-transparent hover:bg-black flex flex-col justify-center items-center hover:bg-opacity-60 text-transparent hover:text-white h-full w-full'>
+                        <p className='font-ibm font-semibold text-xl'>{content.caption}</p>
+                        <p className='font-inter text-xs'> click for more </p>
+                    </div>
+                </div>
             </a>
         )
     }
     else if(content.layout === 'vertical'){
         return(
             <a href={content.pageLink} rel="noopener noreferrer" className="col-span-1 row-span-2 aspect-[1/2.05] bg-transparent flex">
-                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle} />
+                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle}>
+                    <div className='bg-transparent hover:bg-black flex flex-col justify-center items-center hover:bg-opacity-60 text-transparent hover:text-white h-full w-full'>
+                        <p className='font-ibm font-semibold text-xl'>{content.caption}</p>
+                        <p className='font-inter text-xs'> click for more </p>
+                    </div>
+                </div>
             </a>
         )
     }
     else if(content.layout === 'smallsquare'){
         return(
             <a href={content.pageLink} rel="noopener noreferrer" className="col-span-1 row-span-1 aspect-[1/1] bg-transparent flex">
-                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0'style={imageStyle} />
+                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle}>
+                    <div className='bg-transparent hover:bg-black flex flex-col justify-center items-center hover:bg-opacity-60 text-transparent hover:text-white h-full w-full'>
+                        <p className='font-ibm font-semibold text-xl'>{content.caption}</p>
+                        <p className='font-inter text-xs'> click for more </p>
+                    </div>
+                </div>
             </a>
         )
     }
