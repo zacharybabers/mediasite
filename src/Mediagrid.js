@@ -92,20 +92,23 @@ class Mediagrid extends React.Component {
     }
 
     photoToContent(photoArray){
-        return(
-            photoArray.map((photoObject, i) => {
-                let photoContent = {
-                        id: i+1,
-                        caption: photoObject.caption,
+        let contentArray = []
+        photoArray.forEach((photoObject, i) => {
+            photoObject.layouts.forEach((layout, j) => {
+                if(layout !== 'none'){
+                    let photoContent = {
+                        id: i * j + 1,
+                        caption: photoObject.title,
                         type: photoObject.contentType,
-                        layout: photoObject.layout,
-                        source: photoObject.source,
+                        layout: layout,
+                        source: photoObject.imageSources[j],
                         pageLink: '/photo'
                     }
-
-                return photoContent;
+                    contentArray.push(photoContent)
+                }
             })
-        )
+        })
+        return contentArray
     }
 
     writingToContent(writingArray){
