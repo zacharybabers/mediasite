@@ -7,12 +7,17 @@ class Photopage extends React.Component {
         super();
     }
 
-    formatImageList = (imageList) => {
+    formatImageList = (projects) => {
+        let photoArray = []
+        projects.forEach((project, i) => {
+            photoArray = photoArray.concat(project.imageSources)
+        })
+
         return(
-            imageList.map((imageObj, i) => {
-                return(<img src={imageObj.source} alt={imageObj.caption} key={i} className='shrink hover:transform hover:scale-110 transition-transform duration-300'/>);
+            photoArray.map((photoSource, i) => {
+                return(<img src={photoSource} key={i} className='shrink hover:transform hover:scale-110 transition-transform duration-300'/>)
             })
-        );
+        )
     }
     render(){
         let imageList = this.formatImageList(PhotoProjects);
