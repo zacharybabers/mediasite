@@ -16,7 +16,7 @@ class Photopage extends React.Component {
 
         return(
             photoArray.map((photoSource, i) => {
-                return(<img src={photoSource} key={i} className='hover:transform hover:scale-110 transition-transform duration-300'/>)
+                return(<img src={photoSource} key={i} className='hover:transform hover:scale-110 max-w-full transition-transform duration-300'/>)
             })
         )
     }
@@ -28,11 +28,14 @@ class Photopage extends React.Component {
         return(
             <div className='m-10 mx-18 flex items-center flex-col space-y-5'>
                 <div className='md:w-9/12'>
-                    <div className='font-inter font-bold text-6xl'>
+                    <div className='hidden md:block font-inter font-bold text-6xl'>
                         [Photographs]
                     </div>
+                    <div className='block md:hidden font-inter font-bold text-6xl'>
+                        [Photo]
+                    </div>
                 </div>
-                <div className='justify-center w-4/12 flex flex-col m-4'>
+                <div className='justify-center w-9/12 flex flex-col space-y-5 m-4'>
                     {albumList}
                 </div>
             </div>
