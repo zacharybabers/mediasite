@@ -1,5 +1,6 @@
 import React from 'react';
 import { PhotoProjects } from './PhotoProjects';
+import PhotoAlbum from './photocomponents/PhotoAlbum';
 
 class Photopage extends React.Component {
 
@@ -15,12 +16,14 @@ class Photopage extends React.Component {
 
         return(
             photoArray.map((photoSource, i) => {
-                return(<img src={photoSource} key={i} className='shrink hover:transform hover:scale-110 transition-transform duration-300'/>)
+                return(<img src={photoSource} key={i} className='hover:transform hover:scale-110 transition-transform duration-300'/>)
             })
         )
     }
     render(){
-        let imageList = this.formatImageList(PhotoProjects);
+        let albumList = PhotoProjects.map((project, i) => {
+            return <PhotoAlbum project={project} key={i} />
+        })
 
         return(
             <div className='m-10 mx-18 flex items-center flex-col space-y-5'>
@@ -29,10 +32,8 @@ class Photopage extends React.Component {
                         [Photographs]
                     </div>
                 </div>
-                <div className='justify-center flex m-4'>
-                    <div className='flex flex-col justify-center w-96 gap-6'>
-                        {imageList}
-                    </div>
+                <div className='justify-center w-4/12 flex flex-col m-4'>
+                    {albumList}
                 </div>
             </div>
             
