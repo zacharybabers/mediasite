@@ -1,5 +1,6 @@
 import React from 'react';
 import {content as content} from './content.js';
+import { SplashImage } from './SplashImage.js';
 import { CodeProjects } from './codecomponents/CodeProjects.js';
 import { WritingProjects } from './writingcomponents/WritingProjects.js';
 import { ThreedProjects } from './threedcomponents/ThreedProjects.js';
@@ -11,27 +12,6 @@ class Mediagrid extends React.Component {
     constructor(){
         super();
     }
-
-    // threedToContent(threedArray){
-    //     return(
-    //         threedArray.map((threedObject, i) => {
-    //             let threedContent = {
-    //                     id: i+1,
-    //                     caption: threedObject.title,
-    //                     type: threedObject.contentType,
-    //                     layout: 'horizontal',
-    //                     source: threedObject.pic1Path,
-    //                     pageLink: '/3D'
-    //                 }
-    //             if(Math.random() > 0.5){
-    //                 threedContent.layout = 'vertical';
-    //                 threedContent.source = threedObject.pic2Path;
-    //             }
-
-    //             return threedContent;
-    //         })
-    //     )
-    // }
 
     threedToContent(threedArray){
         let contentArray = []
@@ -91,11 +71,14 @@ class Mediagrid extends React.Component {
         return contentArray
     }
 
-    photoToContent(photoArray){
+    photoToContent(initArray){
+        let photoArray = this.shuffle(initArray)
         let contentArray = []
+        let gotSplash = false
         photoArray.forEach((photoObject, i) => {
             photoObject.layouts.forEach((layout, j) => {
-                if(layout !== 'none'){
+                let isSplash = SplashImage.includes(photoObject.imageSources[j])
+                if(layout !== 'none' && !(gotSplash && isSplash)){
                     let photoContent = {
                         id: i * j + 1,
                         caption: photoObject.title,
@@ -105,6 +88,9 @@ class Mediagrid extends React.Component {
                         pageLink: '/photo'
                     }
                     contentArray.push(photoContent)
+                }
+                if(isSplash && !gotSplash){
+                    gotSplash = true
                 }
             })
         })
@@ -159,18 +145,14 @@ class Mediagrid extends React.Component {
     render(){
         //get randomized content
         let randomizedContent = this.getRandomizedContent(this.aggregrateContent());
-        if(randomizedContent[0].type === 'writing' || randomizedContent[0].layout === 'smallsquare'){
-            let i = 1
-            while(i < randomizedContent.length){
-                if (randomizedContent[i].type !== 'writing' && randomizedContent[0].layout === 'smallsquare'){
-                    let temp = randomizedContent[0]
-                    randomizedContent[0] = randomizedContent[i]
-                    randomizedContent[i] = temp
-                    i = randomizedContent.length
-                }
-                i = i + 1;
+        
+        randomizedContent.forEach((content, i) => {
+            if(SplashImage.includes(content.source)){
+                let temp = randomizedContent[0]
+                randomizedContent[0] = content
+                randomizedContent[i] = temp
             }
-        }
+        })
     
         return(
             <div className='m-4'>

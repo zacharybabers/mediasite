@@ -25,6 +25,15 @@ const Contentponent = ({content}) => {
         )
     }
 
+    if(content.type === 'splash'){
+        return(
+            <a href={content.pageLink} rel="noopener noreferrer" className="col-span-2 row-span-2 aspect-[1/1] bg-transparent flex shadow-md outline-1 shadow-stone-500 outline-stone-400" >
+                <div className='bg-cover hover:bg-no-repeat bg-white bg-opacity-0' style={imageStyle}>
+                </div>
+            </a>
+        )
+    }
+
     if(content.layout === 'square'){
         return(
             <a href={content.pageLink} rel="noopener noreferrer" className="col-span-2 row-span-2 aspect-[1/1] bg-transparent flex shadow-md outline-1 shadow-stone-500 outline-stone-400" >
@@ -76,7 +85,7 @@ const Contentponent = ({content}) => {
     else{
         return(
             <div>
-                Broken content layout :/
+                Broken content layout :/: {content.layout}
             </div>
         )
     }
