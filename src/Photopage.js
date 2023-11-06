@@ -39,7 +39,6 @@ class Photopage extends React.Component {
                     {albumList}
                 </div>
             </div>
-            
         )
     }
 }
