@@ -1,5 +1,6 @@
 import GenericWritingPage from "./GenericWritingPage"
 import ImposterSyndrome from "./writingpages/ImposterSyndrome"
+import Manifesto from "./writingpages/Manifesto"
 import SongoftheEarth from "./writingpages/SongoftheEarth"
 import TearsInRain from "./writingpages/TearsInRain"
 import TheBetrayal from "./writingpages/TheBetrayal"
@@ -66,4 +67,16 @@ export const WritingProjects = [
         route: '/sote',
         writingPage: <SongoftheEarth />
     },
+    {
+        id: 6,
+        contentType: 'writing',
+        title: 'My Manifesto',
+        teaser: 'DO NOT CLICK',
+        synopsis: 'DO NOT CLICK',
+        writingType: 'ramblings',
+        genre: 'political',
+        date: '10.13.02',
+        route: '/mymanifesto',
+        writingPage: <Manifesto />
+    }
 ]
