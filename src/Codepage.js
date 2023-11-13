@@ -11,8 +11,11 @@ const Codepage = () => {
     return (
         <div className='m-10 mx-18 flex items-center flex-col space-y-5'>
             <div className='md:w-9/12'>
-                <div className='font-inter font-bold text-6xl'>
+                <div className='hidden md:block font-inter font-bold text-6xl'>
                     [Coding Projects]
+                </div>
+                <div className='md:hidden font-inter font-bold text-6xl'>
+                    [Code]
                 </div>
             </div>
             {codeCards}
