@@ -9,8 +9,8 @@ const ThreedCard = ({project}) => {
                     {project.description}
                 </div>
                 <div className='flex flex-col md:flex-row w-10/12 space-y-5 md:space-y-0 justify-center md:justify-evenly content-center'>
-                    <img src={project.pic1Path} alt='random render' className="object-cover h-30 md:h-full md:w-4/12  shadow-md shadow-stone-800 outline-2 rounded-md hover:transform hover:scale-110 transition-transform duration-300" />
-                    <img src={project.pic2Path} alt='random render' className="object-cover h-30 md:h-full md:w-4/12 shadow-md shadow-stone-800 outline-2 rounded-md hover:transform hover:scale-110 transition-transform duration-300" />
+                    <img src={project.pic1Path} alt='random render' className="object-cover h-30 md:h-full md:w-4/12  shadow-md shadow-stone-800 outline-2 rounded-md md:hover:transform md:hover:scale-110 transition-transform duration-300" />
+                    <img src={project.pic2Path} alt='random render' className="object-cover h-30 md:h-full md:w-4/12 shadow-md shadow-stone-800 outline-2 rounded-md md:hover:transform md:hover:scale-110 transition-transform duration-300" />
                 </div>
             </div>
         </div>
