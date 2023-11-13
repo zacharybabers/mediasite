@@ -13,11 +13,11 @@ const Contentponent = ({content}) => {
     
     if(content.type === 'writing'){
         return(
-            <div className='flex-col col-span-1 row-span-1 aspect-[1/1] bg-white flex justify-between overflow-auto shadow-md outline outline-1 shadow-stone-500 outline-stone-400 p-4 lg:shrink-0 font-inter '>
-                <p className="hidden md:block text-xl font-semibold font-ibm underline">{content.title}</p>
-                <p className='mt-4 text-sm md:text-base'>"{content.synopsis}"</p>
-                <div className='flex mt-4 space-x-2 justify-between'>
-                    <span className='hidden md:inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-center rounded-full px-3 py-1 text-sm font-semibold text-white'>{content.genre}</span>
+            <div className='flex-col col-span-1 row-span-1 aspect-[1/1] bg-white flex justify-center md:justify-between items-center md:items-start overflow-auto shadow-md outline outline-1 shadow-stone-500 outline-stone-400 pt-2 pb-2 md:p-4 lg:shrink-0 font-inter '>
+                <p className="block text-md text-center md:text-left md:text-xl font-semibold font-ibm underline">{content.title}</p>
+                <p className='hidden md:block mt-4 text-sm md:text-base'>"{content.synopsis}"</p>
+                <div className='md:flex mt-4 space-x-2 justify-between'>
+                    <span className='inline-block text-xs md:text-sm bg-gradient-to-r from-purple-500 to-pink-500 text-center rounded-full px-3 py-1 font-semibold text-white'>{content.genre}</span>
                     <a href={content.route} rel="noopener noreferrer" className='hidden md:inline-block underline font-semibold hover:text-red-600'>Click to Read</a>
                 </div>
                 

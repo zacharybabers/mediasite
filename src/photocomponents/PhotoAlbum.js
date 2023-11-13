@@ -3,7 +3,7 @@ import React from 'react'
 const PhotoAlbum = ({project}) => {
 
     let imageList = project.imageSources.map((photoSource, i) => {
-        return(<img src={photoSource} key={i} className='hover:transform hover:scale-110 transition-transform duration-300 max-h-80 outline outline-1 outline-stone-400 shadow-stone-500 shadow-md'/>)
+        return(<img src={photoSource} key={i} className='md:hover:transform md:hover:scale-110 transition-transform duration-300 md:max-h-80 outline outline-1 outline-stone-400 shadow-stone-500 shadow-md'/>)
     })
 
     return(
