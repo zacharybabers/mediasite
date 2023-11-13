@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Mediapage from './Mediapage';
@@ -8,17 +7,12 @@ import ThreeDpage from './ThreeDpage';
 import Writingpage from './Writingpage';
 import Gamespage from './Gamespage';
 import Aboutpage from './Aboutpage';
-import React, { useState } from "react";
+import React from "react";
 import Codepage from './Codepage';
 import { WritingProjects } from './writingcomponents/WritingProjects';
-import MobileNav from './MobileNav';
 import Footer from './Footer';
 
 class App extends React.Component {
-  constructor(){
-    super();
-  }
-
   getWritingRoutes(){
     let routesArray = [];
 

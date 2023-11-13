@@ -20,7 +20,7 @@ const CodeCard = ({project}) => {
                     <div>
                         {techTags}
                         <div className='font-bold underline my-5 md:my-0'>
-                            <a href={project.githubLink} target="_blank">
+                            <a href={project.githubLink} target="_blank" rel="noreferrer">
                                 Github Repo <img src={github} className="social-logo inline-block" alt='github' />
                             </a>
                         </div>    

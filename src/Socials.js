@@ -8,19 +8,19 @@ import spotify from './media/images/Spotify/Spotify.svg'
 
 const Socials = () => {
     return (<div className='flex justify-center md:justify-end content-center space-x-4 md:space-x-2 mr-2 md:mr-4'>
-        <a href='mailto:zacharybabers@gmail.com' target="_blank">
+        <a href='mailto:zacharybabers@gmail.com' target="_blank" rel="noreferrer">
             <img src={email} className="mail-logo" alt='email' />
         </a>
-        <a href='https://github.com/zacharybabers' target="_blank">
+        <a href='https://github.com/zacharybabers' target="_blank" rel="noreferrer">
             <img src={github} className="social-logo" alt='github' />
         </a>
-        <a href='https://linkedin.com/in/zacharybabers' target="_blank">
+        <a href='https://linkedin.com/in/zacharybabers' target="_blank" rel="noreferrer">
             <img src={linkedin} className="social-logo" alt='linkedin' />
         </a>
-        <a href='https://instagram.com/zbabers' target="_blank">
+        <a href='https://instagram.com/zbabers' target="_blank" rel="noreferrer">
             <img src={instagram} className="social-logo" alt='instagram' />
         </a>
-        <a href='https://open.spotify.com/user/7agxl4n0a4zksb16c243svvuc?si=72d9d00664174fbb' target="_blank">
+        <a href='https://open.spotify.com/user/7agxl4n0a4zksb16c243svvuc?si=72d9d00664174fbb' target="_blank" rel="noreferrer">
             <img src={spotify} className="social-logo" alt='spotify' />
         </a>
     </div>)
